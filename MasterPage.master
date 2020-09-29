@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Group 3  - Rotten Tomatoes</title>
+		
+		<link type="text/css" rel="Stylesheet" href="mobile.css" />
+		
+		  
+		 <!--[if (lt IE 9) ]>
+			<script src="html5shiv.js"></script>
+			<link type="text/css" rel="Stylesheet" href="desktop.css" />
+                 <![endif]-->
+
+		<!--<link type="text/css" rel="Stylesheet" href="mobile.css" />-->
+		
+		<link type="text/css" rel="Stylesheet" href="desktop.css" 
+			media="only screen and (min-width:601px)"/>
+        <!--This is a comment-->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="container">
+	<img src="images/animatedGif.gif" alt="Bling Rotten Tomatoes" class ="center"/>
+		 
+        <p> Welcome to Rotten Tomatoes where you can find movies, tv shows and games.  On this website you can view details for specific entertainment, 
+        find reviews and post your own reviews!  Enjoy searching through tons of entertainment on Rotten Tomatoes! </p>
+		
+    <header>
+        <h1>Movies - TV Shows - Games</h1>
+    </header>
+   
+
+     <nav>
+		<ul>
+
+			    <li><a href="Default.aspx">Home</a></li>
+                <li> <a href="SearchByTitle.aspx">Search By Title</a></li>
+                <li><a href="SearchByCategory.aspx">Search By Category</a></li>
+                <li><a href="LoginPage.aspx">Log In</a></li>
+                <li><a href="UserProfile.aspx">User Profile</a></li>
+			
+				
+		</ul>
+	</nav>
+
+    <section>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </section>
+
+    <footer>
+        <h3>Joseph Boscarello, Daniel Conway & David Ramirez - Group Project CISS 247 P400 LCCC</h3>
+    </footer>
+    </section>
+
+    </form>
+</body>
+</html>
+
